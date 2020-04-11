@@ -30,11 +30,11 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <h3>شكرا لكل من يساعد في محاربة الفيروس</h3>
-        <h3>thank you to everyone who helps fight the coronavirus</h3>
-        <h3>merci à tous ceux qui aident à combattre le coronavirus</h3>
+        <h3>Thank you to everyone who helps fight the coronavirus</h3>
+        <h3>Merci à tous ceux qui aident à combattre le coronavirus</h3>
         <img className={styles.image} src={merci} alt="COVID-19" />
+        <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} /> 
       </div>
     );
